@@ -6,3 +6,102 @@
     height: 100%;
     object-fit: cover;
 }
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #1a1a1a, #000);
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.xmb {
+    text-align: center;
+}
+
+.xmb-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.xmb-item {
+    margin: 0 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.xmb-item.active {
+    transform: scale(1.3);
+}
+
+.xmb-icon {
+    width: 64px;
+    height: 64px;
+    display: block;
+    filter: drop-shadow(0 0 10px #00aaff);
+    transition: filter 0.3s ease;
+}
+
+.xmb-label {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+    text-shadow: 0 0 5px #00aaff;
+    transition: text-shadow 0.3s ease;
+}
+
+.xmb-submenu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    padding: 0;
+}
+
+.xmb-item.active .xmb-submenu {
+    display: block;
+}
+
+.xmb-submenu li {
+    margin: 10px 0;
+}
+
+.xmb-submenu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-shadow: 0 0 5px #00aaff;
+    display: block;
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease;
+}
+
+.xmb-submenu a:hover,
+.xmb-submenu a.active {
+    color: #00aaff;
+    text-shadow:
+        0 0 10px #00aaff,
+        0 0 15px #00aaff;
+}
+
+/* Active main menu item styles */
+.xmb-item.active .xmb-icon {
+    filter: drop-shadow(0 0 15px #00aaff) drop-shadow(0 0 25px #00aaff);
+}
+
+.xmb-item.active .xmb-label {
+    text-shadow:
+        0 0 15px #00aaff,
+        0 0 25px #00aaff;
+}

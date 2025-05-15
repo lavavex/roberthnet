@@ -1,15 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert's Project Sandbox</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-
-<video autoplay muted loop id="xmbbackground">
-    <source src="assets/backgrounds/XMB_Black.mp4" type="video/mp4"
-</video>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Robert's Project Sandbox</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <video autoplay muted loop id="xmbbackground">
+            <source src="assets/backgrounds/XMB_Black.mp4" type="video/mp4" />
+        </video>
+        <nav class="xmb">
+            <ul class="xmb-menu">
+                <li class="xmb-item">
+                    <img
+                        src="assets/icons/home.png"
+                        alt="Home"
+                        class="xmb-icon"
+                    />
+                    <span class="xmb-label">Home</span>
+                    <ul class="xmb-submenu">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
+                </li>
+                <li class="xmb-item">
+                    <img
+                        src="assets/icons/toolbox.png"
+                        alt="Settings"
+                        class="xmb-icon"
+                    />
+                    <span class="xmb-label">Settings</span>
+                    <ul class="xmb-submenu">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Preferences</a></li>
+                        <li><a href="#">Background</a></li>
+                    </ul>
+                </li>
+                <li class="xmb-item">
+                    <img
+                        src="assets/icons/music.png"
+                        alt="Music"
+                        class="xmb-icon"
+                    />
+                    <span class="xmb-label">Music</span>
+                    <ul class="xmb-submenu">
+                        <li><a href="#">Playlists</a></li>
+                        <li><a href="#">Apple Music</a></li>
+                    </ul>
+                </li>
+                <li class="xmb-item">
+                    <img
+                        src="assets/icons/controller.png"
+                        alt="Games"
+                        class="xmb-icon"
+                    />
+                    <span class="xmb-label">Games</span>
+                    <ul class="xmb-submenu">
+                        <li><a href="#">Library</a></li>
+                        <li>
+                            <a href="https://steamcommunity.com/id/lavavex"
+                                >Steam</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <script src="script.js"></script>
+    </body>
 </html>
